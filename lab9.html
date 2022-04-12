@@ -1,0 +1,91 @@
+<html>
+
+<head>
+	<title> lab 9 </title>
+
+
+	<script>
+	
+		function summ()
+		{
+			var1 = document.getElementById("input1").value
+			var2 = document.getElementById("input2").value
+
+			
+
+			
+			var1=parseInt(var1)
+			var2=parseInt(var2)
+
+			result = var1+var2
+			alert(result)
+			
+			
+			doucument.getElementById("output").value = result
+
+		}
+
+		function subb()
+		{
+			var1 = document.getElementById("input1").value
+			var2 = document.getElementById("input2").value
+
+			var1=parseInt(var1)
+			var2=parseInt(var2)
+			
+			result = var1-var2
+			
+			alert(result)
+			doucument.getElementById("output").value = result
+
+		}
+
+		function mull()
+		{
+			var1 = document.getElementById("input1").value
+			var2 = document.getElementById("input2").value
+
+			var1=parseInt(var1)
+			var2=parseInt(var2)
+
+			result = var1*var2
+
+			alert(result)
+			doucument.getElementById("output").value = result
+
+		}
+
+		function divv()
+		{
+			var1 = document.getElementById("input1").value
+			var2 = document.getElementById("input2").value
+
+			var1=parseInt(var1)
+			var2=parseInt(var2)
+
+			result = var1/var2
+
+			alert(result)
+			doucument.getElementById("output").value = result
+
+		}
+	</script>
+</head>
+
+<body>
+<form>
+	<input type="text" name = "input1" id="input1" placeholder="Enter first number" >
+	<input type="text" name = "input1" id="input2" placeholder="Enter second number">
+	<br><br>
+
+	<input type="button" name="sum" value="Sum" onclick=summ()>
+	<input type="button" name="subtraction" value="Subtraction" onclick=subb() >
+	<input type="button" name="multiplication" value="Multiplication" onclick=mull() >
+	<input type="button" name="divide" value="Division" onclick=divv() >
+	<br><br>
+
+	<input type="text" name = "output" id="output" placeholder="output">
+</form>
+</body>
+
+</html>
